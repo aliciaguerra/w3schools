@@ -10,10 +10,10 @@ Regular expressions are used to perform pattern matching and "search-and-replace
 
                      var patt = /w3schools/i;
                      
-      Example Explained:
-      - /w3c schools/i is a regular expression
-      - w3schools is a pattern (to be used in a search)
-      - i is a modifier (modifies the search to be case-insensitive)
+Example Explained:
+- /w3c schools/i is a regular expression
+- w3schools is a pattern (to be used in a search)
+- i is a modifier (modifies the search to be case-insensitive)
       
 #Modifiers
 Modifiers are used to perform case-insensitive and global searches:
@@ -56,6 +56,28 @@ Metacharacters are characters with a special meanings:
 - n+ Matches any string that contains at least one n
 - n* Matches any string that contains zero or more occurrences of n
 - n? Matches any string that contains zero or one occurrences again
+- n{X} Matches any string that contains a sequence of X n's
+- n{X,Y} Matches any string that contains a sequence of X to Y's
+- n{X,} Matches any sequence of string that contains a sequnece of at least X n's
+- n$ Matches any string with n at the end of it
+- ^n Matches any string with n at the beginning of it.
+- ?=n Matches any string that is followed by a specific string n
+- ?!n Matches any string that is not followed by a specific string n
+
+#RegExp Object Properties
+- constructor --Returns the function that created the RegExp object's prototype
+- global --Checks whether the "g" modifier is set.
+- ignoreCase ---Checks whether the "i" modifier is set. 
+- lastIndex -- Specifies the index at which to start the next match
+- multiline -- Checks whether the "m" modifier is set
+- source -- Returns the text of RegExp pattern
+
+RegExp Object Methods
+- compile() Compiles a regular expression
+- exec() Tests for match for a string. Returns the first match
+- test() Tests for a match in a string. Returns true or false
+- toString() Returns the string value of the regular expression
+
 
       
                      
